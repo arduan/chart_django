@@ -1,2 +1,5 @@
 from django.contrib import admin
-from chart.models import GDP
+from .models import GDP
+
+
+admin.site.register(GDP)

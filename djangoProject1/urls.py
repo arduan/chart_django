@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from chart.views import line
+from chart import views
 
 urlpatterns = [
-    # path('', line),
+    path('', views.chart),
     path('admin/', admin.site.urls),
 
 ]
